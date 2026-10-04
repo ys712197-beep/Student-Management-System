@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 public class StudentManagementSystem {
 
-    // ArrayList to store students
+    
     private static ArrayList<Student> students = new ArrayList<>();
 
-    // Scanner for user input
+    
     private static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
