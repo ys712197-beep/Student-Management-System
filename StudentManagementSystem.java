@@ -19,7 +19,7 @@ public class StudentManagementSystem {
 
             System.out.print("Enter your choice: ");
             int choice = sc.nextInt();
-            sc.nextLine(); // consume leftover newline
+            sc.nextLine(); 
 
             switch (choice) {
 
@@ -62,9 +62,7 @@ public class StudentManagementSystem {
         }
     }
 
-    // ============================
-    // SHOW MENU
-    // ============================
+
 
     private static void showMenu() {
 
@@ -84,10 +82,6 @@ public class StudentManagementSystem {
 
         System.out.println("======================================");
     }
-
-    // ============================
-    // ADD STUDENT
-    // ============================
 
     private static void addStudent() {
 
@@ -118,10 +112,10 @@ public class StudentManagementSystem {
         double marks = sc.nextDouble();
         sc.nextLine();
 
-        // Create Student object
+        
         Student student = new Student(id, name, marks);
 
-        // Add student to ArrayList
+    
         students.add(student);
 
         System.out.println(
@@ -129,9 +123,7 @@ public class StudentManagementSystem {
         );
     }
 
-    // ============================
-    // DELETE STUDENT
-    // ============================
+    
 
     private static void deleteStudent() {
 
@@ -160,10 +152,6 @@ public class StudentManagementSystem {
                 "Student with ID " + id + " was not found."
         );
     }
-
-    // ============================
-    // SEARCH BY NAME
-    // ============================
 
     private static void searchStudent() {
 
@@ -195,9 +183,7 @@ public class StudentManagementSystem {
         }
     }
 
-    // ============================
-    // UPDATE STUDENT
-    // ============================
+   
 
     private static void updateStudent() {
 
@@ -240,10 +226,6 @@ public class StudentManagementSystem {
         );
     }
 
-    // ============================
-    // DISPLAY ALL STUDENTS
-    // ============================
-
     private static void displayAll() {
 
         System.out.println();
@@ -263,10 +245,6 @@ public class StudentManagementSystem {
             System.out.println(s);
         }
     }
-
-    // ============================
-    // HIGHEST & LOWEST MARKS
-    // ============================
 
     private static void findHighestLowest() {
 
@@ -306,10 +284,6 @@ public class StudentManagementSystem {
                 "Lowest Marks: " + lowest
         );
     }
-
-    // ============================
-    // SEARCH BY ID
-    // ============================
 
     private static void searchById() {
 
